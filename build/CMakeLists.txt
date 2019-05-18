@@ -1,0 +1,8 @@
+CMAKE_MINIMUM_REQUIRED (VERSION 2.6)
+
+PROJECT (v8-marker-plugin)
+
+SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/../out)
+
+ADD_LIBRARY (v8-marker-plugin SHARED
+	../src/libmarker.cc)
